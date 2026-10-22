@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observatório Eleitoral | Administração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <header class="cabecalho">
+        <h1>OBSERVATÓRIO ELEITORAL</h1>
+        <p class="subtitulo">
+            Painel administrativo | Resultados da pesquisa
+        </p>
+        <div class="linha"></div>
+    </header>
+
+    <section class="apresentacao">
+        <h2>Visão geral</h2>
+
+        <p>
+            Este painel reúne os resultados individuais e
+            as médias gerais dos participantes da pesquisa.
+        </p>
+
+        <p class="aviso">
+            Dados demonstrativos para desenvolvimento da interface.
+        </p>
+    </section>
+
+    <fieldset class="secao">
+        <legend>1. RESUMO DA PESQUISA</legend>
+
+        <div class="painel-indicadores">
+
+            <div class="indicador">
+                <span class="indicador-titulo">
+                    Participantes
+                </span>
+
+                <strong id="total-participantes">120</strong>
+
+                <small>Respostas registradas</small>
+            </div>
+
+            <div class="indicador">
+                <span class="indicador-titulo">
+                    Média de esquerda
+                </span>
+
+                <strong id="media-esquerda">54%</strong>
+
+                <small>Média geral</small>
+            </div>
+
+            <div class="indicador">
+                <span class="indicador-titulo">
+                    Média de direita
+                </span>
+
+                <strong id="media-direita">46%</strong>
+
+                <small>Média geral</small>
+            </div>
+
+        </div>
+    </fieldset>
+
+    <fieldset class="secao">
+        <legend>2. DISTRIBUIÇÃO GERAL</legend>
+
+        <p class="instrucao">
+            Distribuição média das pontuações obtidas
+            pelos participantes.
+        </p>
+
+        <div class="resultado-destaque">
+
+            <div class="resultado-numeros">
+
+                <div class="resultado-esquerda">
+                    <span>54%</span>
+                    <small>Esquerda</small>
+                </div>
+
+                <div class="resultado-direita">
+                    <span>46%</span>
+                    <small>Direita</small>
+                </div>
+
+            </div>
+
+            <div class="barra-politica"
+                 role="img"
+                 aria-label="Exemplo: média de 54% esquerda e 46% direita">
+
+                <div id="barra-media-esquerda"
+                     class="barra-esquerda"
+                     style="width: 54%;">
+                </div>
+
+                <div id="barra-media-direita"
+                     class="barra-direita"
+                     style="width: 46%;">
+                </div>
+
+            </div>
+
+            <div class="legenda-barra">
+                <span>Esquerda</span>
+                <span>Direita</span>
+            </div>
+
+        </div>
+    </fieldset>
+
+    <fieldset class="secao">
+        <legend>3. CLASSIFICAÇÃO DOS PARTICIPANTES</legend>
+
+        <div class="painel-indicadores">
+
+            <div class="indicador">
+                <span class="indicador-titulo">
+                    Tendência à esquerda
+                </span>
+
+                <strong id="total-esquerda">58</strong>
+
+                <small>Participantes</small>
+            </div>
+
+            <div class="indicador">
+                <span class="indicador-titulo">
+                    Tendência ao centro
+                </span>
+
+                <strong id="total-centro">24</strong>
+
+                <small>Participantes</small>
+            </div>
+
+            <div class="indicador">
+                <span class="indicador-titulo">
+                    Tendência à direita
+                </span>
+
+                <strong id="total-direita">38</strong>
+
+                <small>Participantes</small>
+            </div>
+
+        </div>
+    </fieldset>
+
+    <fieldset class="secao">
+        <legend>4. RESULTADOS INDIVIDUAIS</legend>
+
+        <p class="instrucao">
+            Relação dos participantes e suas respectivas
+            porcentagens de posicionamento político.
+        </p>
+
+        <div class="tabela-container">
+
+            <table class="tabela-resultados">
+
+                <thead>
+                    <tr>
+                        <th>Participante</th>
+                        <th>Esquerda</th>
+                        <th>Direita</th>
+                        <th>Classificação</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabela-participantes">
+
+                    <tr>
+                        <td>001</td>
+                        <td>62%</td>
+                        <td>38%</td>
+                        <td>Tendência à esquerda</td>
+                    </tr>
+
+                    <tr>
+                        <td>002</td>
+                        <td>35%</td>
+                        <td>65%</td>
+                        <td>Tendência à direita</td>
+                    </tr>
+
+                    <tr>
+                        <td>003</td>
+                        <td>51%</td>
+                        <td>49%</td>
+                        <td>Centro</td>
+                    </tr>
+
+                    <tr>
+                        <td>004</td>
+                        <td>78%</td>
+                        <td>22%</td>
+                        <td>Tendência à esquerda</td>
+                    </tr>
+
+                    <tr>
+                        <td>005</td>
+                        <td>42%</td>
+                        <td>58%</td>
+                        <td>Tendência à direita</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p class="nota">
+            Os participantes são identificados por números,
+            sem exibição de nomes.
+        </p>
+
+    </fieldset>
+
+    <fieldset class="secao">
+        <legend>5. INFORMAÇÕES DA PESQUISA</legend>
+
+        <div class="texto-informativo">
+
+            <p>
+                As porcentagens individuais representam
+                estimativas calculadas a partir das respostas
+                fornecidas pelos participantes.
+            </p>
+
+            <p>
+                As médias gerais deverão ser calculadas
+                considerando os resultados válidos da pesquisa.
+            </p>
+
+            <p>
+                A classificação política depende dos critérios
+                definidos pela metodologia adotada.
+            </p>
+
+        </div>
+    </fieldset>
+
+    <section class="finalizacao">
+
+        <a href="index.html" class="botao">
+            Voltar à pesquisa
+        </a>
+
+    </section>
+
+    <footer>
+        <p>Observatório Eleitoral | Administração</p>
+        <p>2026</p>
+    </footer>
+
+</main>
+
+</body>
+</html>
+

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observatório Eleitoral | Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="container">
+
+    <header class="cabecalho">
+        <h1>OBSERVATÓRIO ELEITORAL</h1>
+        <p class="subtitulo">
+            Pesquisa de opinião política e percepção social
+        </p>
+        <div class="linha"></div>
+    </header>
+
+    <section class="apresentacao">
+        <h2>Apresentação da pesquisa</h2>
+
+        <p>
+            Esta pesquisa busca compreender diferentes opiniões
+            sobre questões políticas, sociais e econômicas.
+        </p>
+
+        <p>
+            Leia as afirmações e selecione a alternativa que
+            melhor representa sua opinião.
+        </p>
+
+        <p class="aviso">
+            Participação voluntária | Tempo estimado: 5 minutos
+        </p>
+    </section>
+
+    <form action="resultado.html" method="get">
+
+        <fieldset class="secao">
+            <legend>1. PERFIL DO PARTICIPANTE</legend>
+
+            <div class="campo">
+                <label for="idade">Faixa etária:</label>
+                <select id="idade" name="idade">
+                    <option value="">Selecione...</option>
+                    <option>Menos de 16 anos</option>
+                    <option>16 a 17 anos</option>
+                    <option>18 a 24 anos</option>
+                    <option>25 a 34 anos</option>
+                    <option>35 a 44 anos</option>
+                    <option>45 a 59 anos</option>
+                    <option>60 anos ou mais</option>
+                    <option>Prefiro não responder</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="escolaridade">Escolaridade:</label>
+                <select id="escolaridade" name="escolaridade">
+                    <option value="">Selecione...</option>
+                    <option>Ensino Fundamental</option>
+                    <option>Ensino Médio</option>
+                    <option>Ensino Superior</option>
+                    <option>Pós-graduação</option>
+                    <option>Prefiro não responder</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="interesse">Interesse por política:</label>
+                <select id="interesse" name="interesse">
+                    <option value="">Selecione...</option>
+                    <option>Nenhum</option>
+                    <option>Baixo</option>
+                    <option>Moderado</option>
+                    <option>Alto</option>
+                    <option>Muito alto</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="secao">
+            <legend>2. OPINIÕES POLÍTICAS</legend>
+
+            <p class="instrucao">
+                Indique seu grau de concordância com cada afirmação.
+            </p>
+
+            <div class="pergunta">
+                <h3>
+                    01. O Estado deve ter maior participação
+                    na economia brasileira.
+                </h3>
+
+                <div class="alternativas">
+                    <label>
+                        <input type="radio" name="q1" value="1" required>
+                        Discordo muito
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="2">
+                        Discordo
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="3">
+                        Neutro
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="4">
+                        Concordo
+                    </label>
+
+                    <label>
+                        <input type="radio" name="q1" value="5">
+                        Concordo muito
+                    </label>
+                </div>
+            </div>
+
+            <div class="pergunta">
+                <h3>
+                    02. A iniciativa privada deve ter maior
+                    liberdade para atuar na economia.
+                </h3>
+
+                <div class="alternativas">
+                    <label><input type="radio" name="q2" value="1" required> Discordo muito</label>
+                    <label><input type="radio" name="q2" value="2"> Discordo</label>
+                    <label><input type="radio" name="q2" value="3"> Neutro</label>
+                    <label><input type="radio" name="q2" value="4"> Concordo</label>
+                    <label><input type="radio" name="q2" value="5"> Concordo muito</label>
+                </div>
+            </div>
+
+            <div class="pergunta">
+                <h3>
+                    03. A redução das desigualdades sociais deve
+                    ser uma prioridade das políticas públicas.
+                </h3>
+
+                <div class="alternativas">
+                    <label><input type="radio" name="q3" value="1" required> Discordo muito</label>
+                    <label><input type="radio" name="q3" value="2"> Discordo</label>
+                    <label><input type="radio" name="q3" value="3"> Neutro</label>
+                    <label><input type="radio" name="q3" value="4"> Concordo</label>
+                    <label><input type="radio" name="q3" value="5"> Concordo muito</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="secao">
+            <legend>3. SOCIEDADE E DEMOCRACIA</legend>
+
+            <div class="pergunta">
+                <h3>
+                    04. O governo deve ampliar os investimentos
+                    em serviços públicos.
+                </h3>
+
+                <div class="alternativas">
+                    <label><input type="radio" name="q4" value="1" required> Discordo muito</label>
+                    <label><input type="radio" name="q4" value="2"> Discordo</label>
+                    <label><input type="radio" name="q4" value="3"> Neutro</label>
+                    <label><input type="radio" name="q4" value="4"> Concordo</label>
+                    <label><input type="radio" name="q4" value="5"> Concordo muito</label>
+                </div>
+            </div>
+
+            <div class="pergunta">
+                <h3>
+                    05. As tradições culturais devem ser
+                    consideradas na elaboração de leis.
+                </h3>
+
+                <div class="alternativas">
+                    <label><input type="radio" name="q5" value="1" required> Discordo muito</label>
+                    <label><input type="radio" name="q5" value="2"> Discordo</label>
+                    <label><input type="radio" name="q5" value="3"> Neutro</label>
+                    <label><input type="radio" name="q5" value="4"> Concordo</label>
+                    <label><input type="radio" name="q5" value="5"> Concordo muito</label>
+                </div>
+            </div>
+
+            <div class="pergunta">
+                <h3>
+                    06. A participação popular nas decisões
+                    políticas deveria ser ampliada.
+                </h3>
+
+                <div class="alternativas">
+                    <label><input type="radio" name="q6" value="1" required> Discordo muito</label>
+                    <label><input type="radio" name="q6" value="2"> Discordo</label>
+                    <label><input type="radio" name="q6" value="3"> Neutro</label>
+                    <label><input type="radio" name="q6" value="4"> Concordo</label>
+                    <label><input type="radio" name="q6" value="5"> Concordo muito</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <section class="finalizacao">
+            <h2>Finalização</h2>
+
+            <p>
+                Confira suas respostas antes de finalizar.
+            </p>
+
+            <button type="submit" class="botao">
+                Finalizar pesquisa
+            </button>
+
+            <p class="nota">
+                Versão demonstrativa. As respostas ainda não são
+                armazenadas nem calculadas.
+            </p>
+        </section>
+
+    </form>
+
+    <footer>
+        <p>Observatório Eleitoral | Pesquisa Acadêmica</p>
+        <p><a href="admin.html">Acesso administrativo</a></p>
+        <p>2026</p>
+    </footer>
+
+</main>
+
+</body>
+</html>
+
